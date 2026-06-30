@@ -39,7 +39,7 @@ export const PERSONAL = {
   phone: "+91-8279335242",
   linkedin: "https://www.linkedin.com/in/vaishalisharma01",
   linkedinHandle: "vaishalisharma01",
-  github: "https://github.com/kikiguhi",
+  github: "https://github.com/kikiguhi", 
   githubHandle: "vaishalisharma",
   resumeUrl: "/VAISHALI_RESUME.pdf", 
   availability: "Open to Opportunities",
