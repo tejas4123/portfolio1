@@ -43,12 +43,8 @@ export function Footer({ onTabChange }: FooterProps) {
                 <a
                   key={link.label}
                   href={link.href}
-                  target={link.label !== "Email" ? "_blank" : undefined}
-                  rel={
-                    link.label !== "Email"
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-lg border border-border bg-hover px-3 py-2 text-xs text-secondary transition-all duration-200 hover:border-accent hover:text-dark"
                   aria-label={`${link.label}: ${link.handle}`}
                 >

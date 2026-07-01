@@ -83,24 +83,15 @@ export function Navbar({ activeTab, onTabChange }: NavbarProps) {
             })}
           </ul>
 
-          {/* CTA + Mobile Toggle */}
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => onTabChange("Contact")}
-              className="hidden rounded-lg bg-dark text-white px-4 py-2 text-xs font-semibold transition-all duration-200 hover:bg-accent hover:text-white md:inline-flex shadow-sm cursor-pointer"
-            >
-              Let&apos;s Connect
-            </button>
-
-            <button
-              onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="relative z-50 rounded-lg p-2 text-dark hover:bg-hover md:hidden transition-colors"
-              aria-label={isMobileOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileOpen}
-            >
-              {isMobileOpen ? <X size={18} /> : <Menu size={18} />}
-            </button>
-          </div>
+          {/* Mobile Toggle */}
+          <button
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+            className="relative z-50 rounded-lg p-2 text-dark hover:bg-hover md:hidden transition-colors"
+            aria-label={isMobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileOpen}
+          >
+            {isMobileOpen ? <X size={18} /> : <Menu size={18} />}
+          </button>
         </nav>
       </motion.header>
 
@@ -138,22 +129,7 @@ export function Navbar({ activeTab, onTabChange }: NavbarProps) {
                   </motion.span>
                 </button>
               ))}
-              <button
-                onClick={() => {
-                  onTabChange("Contact");
-                  setIsMobileOpen(false);
-                }}
-                className="mt-4 rounded-lg bg-dark px-6 py-3 text-sm font-semibold text-white cursor-pointer"
-              >
-                <motion.span
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: NAV_LINKS.length * 0.05 }}
-                  className="block"
-                >
-                  Let&apos;s Connect
-                </motion.span>
-              </button>
+
             </nav>
           </motion.div>
         )}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown, Download, Mail } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { PERSONAL, HERO_STATS } from "@/lib/constants";
 import { TextReveal } from "@/components/animations/text-reveal";
 import { useCounter } from "@/components/animations/counter";
@@ -135,36 +135,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
                 */}
 
               
-                <motion.button
-                  onClick={() => onTabChange?.("Contact")}
-                  whileHover="hover"
-                  whileTap="tap"
-                  variants={{
-                    hover: { scale: 1.02 },
-                    tap: { scale: 0.98 },
-                  }}
-                  className="group relative overflow-hidden inline-flex items-center gap-2 rounded-xl bg-dark text-white px-5 py-3 text-xs font-bold shadow-md transition-all hover:bg-dark/90 hover:shadow-lg"
-                >
-                  <motion.div
-                    variants={{
-                      hover: { rotate: 12, scale: 1.1 },
-                    }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <Mail size={14} />
-                  </motion.div>
-                  <span className="relative z-10">Get in Touch</span>
-                  
-                  {/* Subtle shine effect for secondary button */}
-                  <motion.div 
-                    className="absolute inset-0 z-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
-                    initial={{ left: "-100%" }}
-                    variants={{
-                      hover: { left: "200%" }
-                    }}
-                    transition={{ duration: 0.7, ease: "easeInOut" }}
-                  />
-                </motion.button>
+
               
             </motion.div>
 

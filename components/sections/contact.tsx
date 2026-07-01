@@ -111,7 +111,7 @@ export function Contact() {
 
                 {/* Social Links */}
                 <div className="flex gap-3">
-                  {SOCIAL_LINKS.filter((l) => l.label !== "Email").map(
+                  {SOCIAL_LINKS.map(
                     (link) => {
                       const Icon = iconMap[link.label];
                       return (

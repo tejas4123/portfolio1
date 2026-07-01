@@ -9,9 +9,8 @@ import HomeView from "@/components/views/home-view";
 import AboutView from "@/components/views/about-view";
 import WorkView from "@/components/views/work-view";
 import WorkflowView from "@/components/views/workflow-view";
-import ContactView from "@/components/views/contact-view";
 
-const TABS = ["Home", "About", "Work", "Workflow", "Contact"];
+const TABS = ["Home", "About", "Work", "Workflow"];
 
 const slideVariants: Variants = {
   enter: (direction: number) => ({
@@ -123,20 +122,6 @@ export default function AppController() {
             </motion.div>
           )}
 
-          {activeTab === "Contact" && (
-            <motion.div
-              key="Contact"
-              custom={direction}
-              variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              className="w-full origin-center"
-            >
-              <ContactView />
-              <Footer onTabChange={handleTabChange} />
-            </motion.div>
-          )}
         </AnimatePresence>
       </main>
     </div>

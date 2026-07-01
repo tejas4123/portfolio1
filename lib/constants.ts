@@ -51,7 +51,7 @@ export const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
   { label: "Workflow", href: "/workflow" },
-  { label: "Contact", href: "/contact" },
+  // { label: "Contact", href: "/contact" },
 ] as const;
 
 // ─── Hero Stats ───────────────────────────────────────────────
@@ -407,11 +407,7 @@ export const SOCIAL_LINKS = [
     href: PERSONAL.github,
     handle: PERSONAL.githubHandle,
   },
-  {
-    label: "Email",
-    href: `mailto:${PERSONAL.email}`,
-    handle: PERSONAL.email,
-  },
+
 ] as const;
 
 // ─── Certificates ─────────────────────────────────────────────
