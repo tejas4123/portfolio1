@@ -95,20 +95,7 @@ export function Contact() {
                     </div>
                   </a>
 
-                  <a
-                    href={`tel:${PERSONAL.phone}`}
-                    className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-all duration-200 hover:border-dark hover:shadow-sm"
-                  >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                      <Phone size={18} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-muted">Phone</p>
-                      <p className="text-sm font-medium text-dark">
-                        {PERSONAL.phone}
-                      </p>
-                    </div>
-                  </a>
+                  
 
                   <div className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
