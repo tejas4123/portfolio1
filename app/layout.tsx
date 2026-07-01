@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   title: "Vaishali Sharma — QA Engineer | Testing Quality. Building Confidence.",
   description:
     "QA Engineer with hands-on experience in manual and automation testing on enterprise-grade microservices and web applications. Skilled in TestNG, JUnit, Postman, JIRA, and SQL.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   keywords: [
     "QA Engineer",
     "SDET",

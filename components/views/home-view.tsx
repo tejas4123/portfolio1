@@ -73,7 +73,7 @@ export default function Home({ onTabChange }: { onTabChange?: (tab: string) => v
 
             {/* Right: Mockup Teaser Image (5 cols) */}
             <div className="lg:col-span-5">
-              <ScrollRevealImage
+              <ScrollRevealImage 
                 src="/images/dashboard_mockup.png"
                 alt="QA Dashboard TestPulse mockup showing 95% pass rate"
                 width={500}
