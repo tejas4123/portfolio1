@@ -112,7 +112,7 @@ export default function ContactPage() {
 
             {/* Social handles list */}
             <div className="flex gap-2">
-              {SOCIAL_LINKS.filter((l) => l.label !== "Email").map((link) => {
+              {SOCIAL_LINKS.map((link) => {
                 const Icon = iconMap[link.label];
                 return (
                   <a
