@@ -101,7 +101,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
               className="mt-8 flex flex-wrap gap-3"
             >
               
-                <motion.a
+                {/* <motion.a
                   href={PERSONAL.resumeUrl}
                   download
                   whileHover="hover"
@@ -123,7 +123,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
                   <span className="relative z-10">Download Resume</span>
                   
                   {/* Shine effect */}
-                  <motion.div 
+                  {/* <motion.div 
                     className="absolute inset-0 z-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
                     initial={{ left: "-100%" }}
                     variants={{
@@ -132,7 +132,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
                     transition={{ duration: 0.7, ease: "easeInOut" }}
                   />
                 </motion.a>
-              
+                */}
 
               
                 <motion.button
@@ -143,7 +143,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
                     hover: { scale: 1.02 },
                     tap: { scale: 0.98 },
                   }}
-                  className="group relative overflow-hidden inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-xs font-bold text-dark transition-all hover:border-accent/40 hover:bg-hover hover:shadow-md"
+                  className="group relative overflow-hidden inline-flex items-center gap-2 rounded-xl bg-dark text-white px-5 py-3 text-xs font-bold shadow-md transition-all hover:bg-dark/90 hover:shadow-lg"
                 >
                   <motion.div
                     variants={{
@@ -157,7 +157,7 @@ export function Hero({ onTabChange }: { onTabChange?: (tab: string) => void }) {
                   
                   {/* Subtle shine effect for secondary button */}
                   <motion.div 
-                    className="absolute inset-0 z-0 w-1/2 bg-gradient-to-r from-transparent via-accent/5 to-transparent -skew-x-12"
+                    className="absolute inset-0 z-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
                     initial={{ left: "-100%" }}
                     variants={{
                       hover: { left: "200%" }

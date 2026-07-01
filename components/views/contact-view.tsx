@@ -97,18 +97,7 @@ export default function ContactPage() {
                 </div>
               </a>
 
-              <a
-                href={`tel:${PERSONAL.phone}`}
-                className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-all duration-200 hover:border-dark/20"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                  <Phone size={18} />
-                </div>
-                <div>
-                  <p className="text-[10px] uppercase tracking-wider text-secondary">Phone</p>
-                  <p className="text-sm font-semibold text-dark">{PERSONAL.phone}</p>
-                </div>
-              </a>
+              
 
               <div className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
@@ -238,7 +227,7 @@ export default function ContactPage() {
       </section>
 
       {/* Embedded Resume Details */}
-      <section className="mx-auto max-w-4xl px-6 mt-16 pt-16 border-t border-border relative z-10">
+      {/* <section className="mx-auto max-w-4xl px-6 mt-16 pt-16 border-t border-border relative z-10">
         <GlowCard className="p-8 text-center flex flex-col items-center" glowColor="rgba(37, 99, 235, 0.04)">
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent/10 text-accent">
             <FileText size={28} />
@@ -276,7 +265,7 @@ export default function ContactPage() {
             </motion.button>
           </div>
         </GlowCard>
-      </section>
+      </section> */}
     </PageTransition>
   );
 }

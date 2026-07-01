@@ -95,7 +95,6 @@ export function Contact() {
                     </div>
                   </a>
 
-                  
 
                   <div className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
@@ -240,30 +239,30 @@ export function Contact() {
                 </div>
 
                 <div className="mt-6">
-                  
-                    <button
-                      type="submit"
-                      disabled={isSubmitted}
-                      className={cn(
-                        "inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium transition-all duration-200 sm:w-auto",
-                        isSubmitted
-                          ? "bg-success text-white"
-                          : "bg-dark text-white hover:bg-dark/90 hover:shadow-lg"
-                      )}
-                    >
-                      {isSubmitted ? (
-                        <>
-                          <CheckCircle2 size={16} />
-                          Email Client Opened!
-                        </>
-                      ) : (
-                        <>
-                          <Send size={16} />
-                          Send Message
-                        </>
-                      )}
-                    </button>
-                  
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitted}
+                    className={cn(
+                      "inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium transition-all duration-200 sm:w-auto",
+                      isSubmitted
+                        ? "bg-success text-white"
+                        : "bg-dark text-white hover:bg-dark/90 hover:shadow-lg"
+                    )}
+                  >
+                    {isSubmitted ? (
+                      <>
+                        <CheckCircle2 size={16} />
+                        Email Client Opened!
+                      </>
+                    ) : (
+                      <>
+                        <Send size={16} />
+                        Send Message
+                      </>
+                    )}
+                  </button>
+
                 </div>
               </form>
             </FadeIn>

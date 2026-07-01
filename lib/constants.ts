@@ -36,7 +36,7 @@ export const PERSONAL = {
     "QA Engineer with hands-on experience in both manual and automation testing on enterprise-grade microservices and web applications. Skilled in writing test plans, running regression and API tests, and tracking defects end-to-end in JIRA. I work well in Agile teams and take the quality of what ships seriously.",
   location: "Ghaziabad, India",
   email: "shvaishali37@gmail.com",
-  phone: "+91-8279335242",
+
   linkedin: "https://www.linkedin.com/in/vaishalisharma01",
   linkedinHandle: "vaishalisharma01",
   github: "https://github.com/kikiguhi", 
@@ -149,7 +149,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Whitehats Technologies",
     role: "Quality Analyst",
-    duration: "Feb 2025 – Jan 2026",
+    duration: "Feb 2025",
     startDate: "2025-02",
     endDate: "2026-01",
     responsibilities: [

@@ -79,7 +79,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="min-h-screen bg-background font-body text-primary antialiased">
+      <body suppressHydrationWarning className="min-h-screen bg-background font-body text-primary antialiased">
         {children}
       </body>
     </html>
