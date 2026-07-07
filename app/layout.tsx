@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
@@ -85,6 +86,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning className="min-h-screen bg-background font-body text-primary antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
